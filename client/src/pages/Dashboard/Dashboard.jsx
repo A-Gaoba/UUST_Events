@@ -76,7 +76,7 @@ const Dashboard = ({ user }) => {
             Add Event
           </button>
         ) : (
-          <>
+          <div className="h-screen flex flex-col justify-center">
             <button
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mb-4"
               onClick={() => navigate("/signup")}
@@ -89,7 +89,7 @@ const Dashboard = ({ user }) => {
             >
               Sign in
             </button>
-          </>
+          </div>
         )}
         <EventList events={events} setEvents={setEvents} user={user} />
       </div>

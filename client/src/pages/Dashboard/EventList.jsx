@@ -13,9 +13,9 @@ const EventList = ({ events, setEvents, user }) => {
   }
 
   return (
-    <>
+    <div >
       {events.length === 0 && (
-        <p className="text-gray-500 mb-4">
+        <p className="text-gray-500 mb-4 h-screen">
           No events added yet. Click "Add Event" to get started.
         </p>
       )}
@@ -38,7 +38,7 @@ const EventList = ({ events, setEvents, user }) => {
           ))}
         </ul>
       )}
-    </>
+    </div>
   );
 };
 
